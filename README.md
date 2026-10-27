@@ -6,7 +6,7 @@
 
 **Diagnóstico completo de hardware para Windows: sensores ao vivo, saúde dos discos (SMART), drivers, benchmark 3D e recomendações de upgrade, tudo em um programa só e grátis.**
 
-[![Baixar para Windows](https://img.shields.io/badge/Baixar_para_Windows-v1.0.0-00B8D9?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Isago2508/HardwareDiag/releases/latest)
+[![Baixar para Windows](https://img.shields.io/badge/Baixar_para_Windows-v1.0.1-00B8D9?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Isago2508/HardwareDiag/releases/latest)
 [![Site](https://img.shields.io/badge/Site-isago2508.github.io-FF2E88?style=for-the-badge)](https://isago2508.github.io/HardwareDiag/)
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
@@ -59,11 +59,12 @@ Também gera relatórios prontos para enviar ao cliente.
 - **Gráficos 3D ajustáveis:** níveis Leve, Normal e Ultra, para PCs fracos ou máquinas parrudas.
 - **6 idiomas:** português, inglês, espanhol, chinês, coreano e japonês, trocando na hora, sem reiniciar.
 - **10 temas de cores** e ícones personalizáveis.
-- **Privacidade:** nada sai do computador. Os dados ficam em `%LOCALAPPDATA%\HardwareDiag`.
+- **Atualização automática:** em Configurações → Atualizações, baixa a versão nova daqui do GitHub, confere o arquivo e reinicia já atualizado.
+- **Privacidade:** seus dados não saem do computador (ficam em `%LOCALAPPDATA%\HardwareDiag`). O programa só consulta este repositório para saber se há versão nova.
 
 ## Download e instalação
 
-1. Baixe o **`Instalar_HardwareDiag_1.0.0.exe`** em [Releases](https://github.com/Isago2508/HardwareDiag/releases/latest).
+1. Baixe o **`Instalar_HardwareDiag_1.0.1.exe`** em [Releases](https://github.com/Isago2508/HardwareDiag/releases/latest).
 2. Abra o arquivo. Se aparecer "O Windows protegeu o computador", clique em **Mais informações → Executar assim mesmo**.
    O aviso aparece porque o programa é novo e ainda não tem assinatura digital.
 3. Siga o assistente de instalação. Não é preciso instalar o .NET.

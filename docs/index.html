@@ -30,7 +30,7 @@
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"HardwareDiag","applicationCategory":"UtilitiesApplication",
- "operatingSystem":"Windows 10, Windows 11","softwareVersion":"1.0.0","inLanguage":["pt-BR","en","es","zh","ko","ja"],
+ "operatingSystem":"Windows 10, Windows 11","softwareVersion":"1.0.1","inLanguage":["pt-BR","en","es","zh","ko","ja"],
  "description":"Diagnóstico completo de hardware para Windows: sensores ao vivo, saúde dos discos (SMART), drivers, limpeza, estresse de CPU, benchmark 3D e recomendações de upgrade.",
  "url":"https://isago2508.github.io/HardwareDiag/","downloadUrl":"https://github.com/Isago2508/HardwareDiag/releases/latest",
  "screenshot":"https://isago2508.github.io/HardwareDiag/img/painel.png","image":"https://isago2508.github.io/HardwareDiag/img/icone.png",
@@ -42,7 +42,8 @@
  {"@type":"Question","name":"Como ver a saúde do SSD ou do HD?","acceptedAnswer":{"@type":"Answer","text":"Abra a aba Armazenamento. O HardwareDiag lê o SMART do disco e mostra a vida útil, a temperatura, as horas ligado, o total escrito e um diagnóstico em português."}},
  {"@type":"Question","name":"Como saber quantos slots de memória RAM estão livres?","acceptedAnswer":{"@type":"Answer","text":"O HardwareDiag lê a tabela SMBIOS da placa-mãe e lista cada slot pelo nome, ocupado ou vazio, com o tamanho, o tipo (DDR3, DDR4, DDR5) e a velocidade de cada pente."}},
  {"@type":"Question","name":"Funciona em quais versões do Windows?","acceptedAnswer":{"@type":"Answer","text":"Windows 10 e Windows 11, 64 bits. O programa pede para rodar como administrador, que é o que permite ler as temperaturas e o SMART dos discos."}},
- {"@type":"Question","name":"O HardwareDiag envia meus dados para a internet?","acceptedAnswer":{"@type":"Answer","text":"Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\\HardwareDiag."}}]}
+ {"@type":"Question","name":"O HardwareDiag envia meus dados para a internet?","acceptedAnswer":{"@type":"Answer","text":"Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\\HardwareDiag. O programa só consulta o GitHub do projeto para saber se há versão nova."}},
+ {"@type":"Question","name":"Como atualizar o HardwareDiag?","acceptedAnswer":{"@type":"Answer","text":"Em Configurações → Atualizações, clique em Procurar atualizações e depois em Atualizar agora. O programa baixa a versão nova, confere o arquivo e reinicia já atualizado."}}]}
 </script>
 </head>
 <body>
@@ -71,7 +72,7 @@
       <a class="btn pri" href="https://github.com/Isago2508/HardwareDiag/releases/latest">⬇ Baixar para Windows</a>
       <a class="btn love" href="#doar">♥ Apoiar o projeto</a>
     </div>
-    <p class="small" style="margin-top:14px">Versão 1.0.0 · Windows 10 e 11 (64 bits) · grátis, sem propaganda</p>
+    <p class="small" style="margin-top:14px">Versão 1.0.1 · Windows 10 e 11 (64 bits) · grátis, sem propaganda</p>
     <img class="shot" src="img/painel.png" width="1320" height="840" alt="Painel do HardwareDiag com medidores de processador, placa de vídeo, memória, disco, rede e sistema">
   </div>
 </div>
@@ -89,6 +90,7 @@
       <div class="card"><h3>Drivers</h3><p>Versão, data e assinatura de cada driver, atualização pelo Windows Update, backup e instalação limpa do driver de vídeo.</p></div>
       <div class="card"><h3>Limpeza e estresse</h3><p>Limpa temporários e caches com segurança, e testa a CPU em carga total com parada automática por temperatura.</p></div>
       <div class="card"><h3>Relatórios</h3><p>Exporte o básico ou tudo, em PDF, HTML, TXT ou JSON, pronto para mandar ao cliente.</p></div>
+      <div class="card"><h3>Sempre atualizado</h3><p>Avisa quando sai versão nova e se atualiza sozinho: baixa daqui do GitHub, confere o arquivo e reinicia.</p></div>
     </div>
   </div>
 </section>
@@ -111,7 +113,7 @@
     <h2>Baixar e instalar</h2>
     <p class="sub">Um instalador só, que já traz tudo. Não precisa instalar o .NET.</p>
     <ol class="steps">
-      <li>Baixe o <b>Instalar_HardwareDiag_1.0.0.exe</b> na <a href="https://github.com/Isago2508/HardwareDiag/releases/latest">página de versões</a>.</li>
+      <li>Baixe o <b>Instalar_HardwareDiag_1.0.1.exe</b> na <a href="https://github.com/Isago2508/HardwareDiag/releases/latest">página de versões</a>.</li>
       <li>Abra o arquivo. Se aparecer "O Windows protegeu o computador", clique em <b>Mais informações → Executar assim mesmo</b>. O aviso aparece porque o programa é novo e ainda não tem assinatura digital.</li>
       <li>Siga o assistente: escolha a pasta, os atalhos e pronto.</li>
     </ol>
@@ -149,7 +151,8 @@
     <details><summary>Como ver a saúde do SSD ou do HD?</summary><p>Abra a aba Armazenamento. O programa lê o SMART do disco e mostra a vida útil, a temperatura, as horas ligado, o total escrito e um diagnóstico em português.</p></details>
     <details><summary>Como saber quantos slots de memória RAM estão livres?</summary><p>O HardwareDiag lê a tabela SMBIOS da placa-mãe e lista cada slot pelo nome, ocupado ou vazio, com o tamanho, o tipo (DDR3, DDR4, DDR5) e a velocidade de cada pente.</p></details>
     <details><summary>Funciona em quais versões do Windows?</summary><p>Windows 10 e Windows 11, 64 bits. Ele pede para rodar como administrador, que é o que permite ler as temperaturas e o SMART dos discos.</p></details>
-    <details><summary>O programa envia meus dados para a internet?</summary><p>Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\HardwareDiag.</p></details>
+    <details><summary>O programa envia meus dados para a internet?</summary><p>Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\HardwareDiag. O programa só consulta o GitHub do projeto para saber se há versão nova.</p></details>
+    <details><summary>Como atualizar o HardwareDiag?</summary><p>Em <b>Configurações → Atualizações</b>, clique em <b>Procurar atualizações</b> e depois em <b>Atualizar agora</b>. O programa baixa a versão nova, confere o arquivo e reinicia já atualizado. Ele também avisa sozinho quando sai uma versão nova.</p></details>
     <details><summary>Encontrei um problema. Como aviso?</summary><p>Abra uma <a href="https://github.com/Isago2508/HardwareDiag/issues">issue no GitHub</a> contando o que aconteceu.</p></details>
   </div>
 </section>
