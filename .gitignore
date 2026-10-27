@@ -1,0 +1,27 @@
+# Compilação
+bin/
+obj/
+publish/
+publish-*/
+instalador/
+instalador-*/
+*.exe
+*.zip
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.pdb
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Arquivos locais de quem desenvolve (nunca enviar)
+CONTINUAR.md
+settings.json
+*senha*
