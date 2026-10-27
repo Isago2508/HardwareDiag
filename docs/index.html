@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HardwareDiag — Diagnóstico de hardware grátis para Windows (sensores, SMART, benchmark)</title>
+<meta name="description" content="Programa grátis de diagnóstico de PC para Windows 10 e 11: temperaturas e sensores ao vivo, saúde do SSD e HD (SMART), drivers, limpeza, estresse de CPU, benchmark 3D e dicas de upgrade. Em português.">
+<meta name="keywords" content="diagnóstico de hardware, diagnóstico de PC, programa para testar PC, saúde do SSD, SMART, temperatura do processador, benchmark, teste de memória RAM, slots de memória, drivers, upgrade de PC, técnico de informática, Windows 10, Windows 11, hardware monitor">
+<meta name="author" content="Isago2508">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://isago2508.github.io/HardwareDiag/">
+<link rel="icon" type="image/png" href="img/icone.png">
+<meta name="theme-color" content="#070b14">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="HardwareDiag">
+<meta property="og:title" content="HardwareDiag — Diagnóstico de hardware grátis para Windows">
+<meta property="og:description" content="Sensores ao vivo, saúde dos discos (SMART), drivers, benchmark 3D e dicas de upgrade. Grátis e em português.">
+<meta property="og:url" content="https://isago2508.github.io/HardwareDiag/">
+<meta property="og:image" content="https://isago2508.github.io/HardwareDiag/img/painel.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HardwareDiag — Diagnóstico de hardware grátis para Windows">
+<meta name="twitter:description" content="Sensores ao vivo, SMART, drivers, benchmark 3D e dicas de upgrade. Grátis.">
+<meta name="twitter:image" content="https://isago2508.github.io/HardwareDiag/img/painel.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"HardwareDiag","applicationCategory":"UtilitiesApplication",
+ "operatingSystem":"Windows 10, Windows 11","softwareVersion":"1.0.0","inLanguage":["pt-BR","en","es","zh","ko","ja"],
+ "description":"Diagnóstico completo de hardware para Windows: sensores ao vivo, saúde dos discos (SMART), drivers, limpeza, estresse de CPU, benchmark 3D e recomendações de upgrade.",
+ "url":"https://isago2508.github.io/HardwareDiag/","downloadUrl":"https://github.com/Isago2508/HardwareDiag/releases/latest",
+ "screenshot":"https://isago2508.github.io/HardwareDiag/img/painel.png","image":"https://isago2508.github.io/HardwareDiag/img/icone.png",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"author":{"@type":"Person","name":"Isago2508","url":"https://github.com/Isago2508"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"O HardwareDiag é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim. O HardwareDiag é gratuito, sem propaganda e sem versão paga. Se quiser, você pode apoiar o projeto com uma doação por Pix."}},
+ {"@type":"Question","name":"Como ver a saúde do SSD ou do HD?","acceptedAnswer":{"@type":"Answer","text":"Abra a aba Armazenamento. O HardwareDiag lê o SMART do disco e mostra a vida útil, a temperatura, as horas ligado, o total escrito e um diagnóstico em português."}},
+ {"@type":"Question","name":"Como saber quantos slots de memória RAM estão livres?","acceptedAnswer":{"@type":"Answer","text":"O HardwareDiag lê a tabela SMBIOS da placa-mãe e lista cada slot pelo nome, ocupado ou vazio, com o tamanho, o tipo (DDR3, DDR4, DDR5) e a velocidade de cada pente."}},
+ {"@type":"Question","name":"Funciona em quais versões do Windows?","acceptedAnswer":{"@type":"Answer","text":"Windows 10 e Windows 11, 64 bits. O programa pede para rodar como administrador, que é o que permite ler as temperaturas e o SMART dos discos."}},
+ {"@type":"Question","name":"O HardwareDiag envia meus dados para a internet?","acceptedAnswer":{"@type":"Answer","text":"Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\\HardwareDiag."}}]}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/icone.png" width="32" height="32" alt=""><span>HARDWARE<b>DIAG</b></span></a>
+    <nav>
+      <a href="#recursos">Recursos</a>
+      <a href="#telas">Telas</a>
+      <a href="#baixar">Baixar</a>
+      <a href="#doar">Apoiar</a>
+      <a href="#perguntas">Perguntas</a>
+      <a href="https://github.com/Isago2508/HardwareDiag">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <img src="img/icone.png" width="88" height="88" alt="Ícone do HardwareDiag" style="margin:0 auto">
+    <h1>Diagnóstico de hardware <b>completo</b> para Windows</h1>
+    <p class="lead">Temperaturas e sensores ao vivo, saúde do SSD e do HD, drivers, limpeza, estresse de CPU, benchmark com a placa-mãe do seu PC em 3D e dicas do que trocar para rodar sem travar. Grátis e em português.</p>
+    <div class="cta">
+      <a class="btn pri" href="https://github.com/Isago2508/HardwareDiag/releases/latest">⬇ Baixar para Windows</a>
+      <a class="btn love" href="#doar">♥ Apoiar o projeto</a>
+    </div>
+    <p class="small" style="margin-top:14px">Versão 1.0.0 · Windows 10 e 11 (64 bits) · grátis, sem propaganda</p>
+    <img class="shot" src="img/painel.png" width="1320" height="840" alt="Painel do HardwareDiag com medidores de processador, placa de vídeo, memória, disco, rede e sistema">
+  </div>
+</div>
+
+<section id="recursos">
+  <div class="wrap">
+    <h2>Tudo o que um técnico precisa</h2>
+    <p class="sub">O HardwareDiag lê o hardware direto da fonte: sensores da placa-mãe, SMART dos discos e a tabela SMBIOS do firmware.</p>
+    <div class="grid">
+      <div class="card"><h3>Painel ao vivo</h3><p>Uso e temperatura de CPU e vídeo, memória, discos, rede, ventoinhas e bateria, com gráfico em tempo real.</p></div>
+      <div class="card"><h3>Saúde dos discos</h3><p>SMART, vida útil, horas ligado e total escrito. Diz o tipo exato: SSD SATA 2,5", M.2, mSATA, NVMe com PCIe ou HD com RPM.</p></div>
+      <div class="card"><h3>Memória RAM</h3><p>Cada slot da placa pelo nome, ocupado ou vazio, com tamanho, tipo DDR e velocidade de cada pente.</p></div>
+      <div class="card"><h3>Benchmark 3D</h3><p>Testes de processador, memória, vídeo e disco, com a placa-mãe do seu PC montada em 3D. Gráficos Leve, Normal ou Ultra.</p></div>
+      <div class="card"><h3>Upgrade</h3><p>Teste de uso diário e teste gamer: mostra o que roda liso, o que trava e o que trocar primeiro.</p></div>
+      <div class="card"><h3>Drivers</h3><p>Versão, data e assinatura de cada driver, atualização pelo Windows Update, backup e instalação limpa do driver de vídeo.</p></div>
+      <div class="card"><h3>Limpeza e estresse</h3><p>Limpa temporários e caches com segurança, e testa a CPU em carga total com parada automática por temperatura.</p></div>
+      <div class="card"><h3>Relatórios</h3><p>Exporte o básico ou tudo, em PDF, HTML, TXT ou JSON, pronto para mandar ao cliente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="telas" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>Telas</h2>
+    <p class="sub">Interface neon, em 6 idiomas e com 10 temas de cores.</p>
+    <div class="gallery">
+      <figure><img src="img/benchmark.png" loading="lazy" width="1320" height="840" alt="Benchmark 3D do HardwareDiag"><figcaption>Benchmark com a placa-mãe do seu PC em 3D</figcaption></figure>
+      <figure><img src="img/upgrade.png" loading="lazy" width="1320" height="840" alt="Aba Upgrade do HardwareDiag"><figcaption>Upgrade: o que trocar para rodar sem travar</figcaption></figure>
+      <figure><img src="img/armazenamento.png" loading="lazy" width="1320" height="840" alt="Saúde do SSD no HardwareDiag"><figcaption>Saúde do disco: SMART, vida útil e diagnóstico</figcaption></figure>
+      <figure><img src="img/configuracoes.png" loading="lazy" width="1320" height="840" alt="Configurações do HardwareDiag"><figcaption>Idiomas, temas e qualidade dos gráficos 3D</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="baixar">
+  <div class="wrap">
+    <h2>Baixar e instalar</h2>
+    <p class="sub">Um instalador só, que já traz tudo. Não precisa instalar o .NET.</p>
+    <ol class="steps">
+      <li>Baixe o <b>Instalar_HardwareDiag_1.0.0.exe</b> na <a href="https://github.com/Isago2508/HardwareDiag/releases/latest">página de versões</a>.</li>
+      <li>Abra o arquivo. Se aparecer "O Windows protegeu o computador", clique em <b>Mais informações → Executar assim mesmo</b>. O aviso aparece porque o programa é novo e ainda não tem assinatura digital.</li>
+      <li>Siga o assistente: escolha a pasta, os atalhos e pronto.</li>
+    </ol>
+    <div class="cta" style="justify-content:flex-start;margin-top:24px">
+      <a class="btn pri" href="https://github.com/Isago2508/HardwareDiag/releases/latest">⬇ Baixar para Windows</a>
+    </div>
+  </div>
+</section>
+
+<section id="doar" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>♥ Apoie o projeto</h2>
+    <p class="sub">O HardwareDiag é gratuito. Se ele te ajudou, considere fazer uma doação de qualquer valor: isso mantém o projeto vivo e com novidades.</p>
+    <div class="donate">
+      <img class="qr" src="img/pix-qr.png" width="240" height="240" alt="QR Code Pix para doar ao HardwareDiag">
+      <div>
+        <h3 style="margin:0 0 8px;font:700 22px 'Chakra Petch',sans-serif">Pix (você escolhe o valor)</h3>
+        <p class="small" style="margin:0 0 14px">Abra o app do seu banco, escolha <b>Pix → Ler QR Code</b> e aponte para o código. Ou copie a chave aleatória:</p>
+        <code id="pix">e13a548a-f773-4d9b-9c38-9045307f28f6</code>
+        <div class="cta" style="justify-content:flex-start;margin-top:14px">
+          <button class="btn pri" data-copy="00020126580014br.gov.bcb.pix0136e13a548a-f773-4d9b-9c38-9045307f28f65204000053039865802BR5912HARDWAREDIAG6006BRASIL62070503***63042478">Copiar Pix copia e cola</button>
+          <button class="btn" data-copy="e13a548a-f773-4d9b-9c38-9045307f28f6">Copiar a chave</button>
+        </div>
+        <p class="ok" id="ok"></p>
+        <p class="small">Outra forma de ajudar: dê uma ⭐ no <a href="https://github.com/Isago2508/HardwareDiag">GitHub</a> e indique para os amigos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="perguntas">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>O HardwareDiag é grátis?</summary><p>Sim. É gratuito, sem propaganda e sem versão paga. Se quiser, você pode apoiar o projeto com uma doação por Pix.</p></details>
+    <details><summary>Como ver a saúde do SSD ou do HD?</summary><p>Abra a aba Armazenamento. O programa lê o SMART do disco e mostra a vida útil, a temperatura, as horas ligado, o total escrito e um diagnóstico em português.</p></details>
+    <details><summary>Como saber quantos slots de memória RAM estão livres?</summary><p>O HardwareDiag lê a tabela SMBIOS da placa-mãe e lista cada slot pelo nome, ocupado ou vazio, com o tamanho, o tipo (DDR3, DDR4, DDR5) e a velocidade de cada pente.</p></details>
+    <details><summary>Funciona em quais versões do Windows?</summary><p>Windows 10 e Windows 11, 64 bits. Ele pede para rodar como administrador, que é o que permite ler as temperaturas e o SMART dos discos.</p></details>
+    <details><summary>O programa envia meus dados para a internet?</summary><p>Não. Todas as informações ficam no seu computador, na pasta %LOCALAPPDATA%\HardwareDiag.</p></details>
+    <details><summary>Encontrei um problema. Como aviso?</summary><p>Abra uma <a href="https://github.com/Isago2508/HardwareDiag/issues">issue no GitHub</a> contando o que aconteceu.</p></details>
+  </div>
+</section>
+
+<section id="english" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>In English</h2>
+    <p class="sub" style="margin-bottom:12px">HardwareDiag is a free hardware diagnostics tool for Windows 10 and 11: live sensors and temperatures, SSD/HDD health (SMART), exact RAM slot detection, drivers, cleanup, CPU stress test, a 3D benchmark of your own motherboard and upgrade advice. Available in English, Portuguese, Spanish, Chinese, Korean and Japanese.</p>
+    <a class="btn" href="https://github.com/Isago2508/HardwareDiag/releases/latest">⬇ Download for Windows</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>HardwareDiag · grátis para Windows</span>
+    <span><a href="https://github.com/Isago2508/HardwareDiag">GitHub</a> · <a href="https://github.com/Isago2508/HardwareDiag/issues">Suporte</a> · <a href="https://github.com/Isago2508/HardwareDiag/blob/main/THIRD_PARTY_NOTICES.md">Licenças</a></span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
+  const ok = document.getElementById('ok');
+  try { await navigator.clipboard.writeText(b.dataset.copy); ok.textContent = '✓ Copiado! Cole no app do seu banco.'; }
+  catch { ok.textContent = 'Não deu para copiar automaticamente: selecione a chave acima.'; }
+}));
+</script>
+</body>
+</html>
