@@ -8,6 +8,7 @@
 
 [![Baixar para Windows](https://img.shields.io/badge/Baixar_para_Windows-v1.0.2-00B8D9?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Isago2508/HardwareDiag/releases/latest)
 [![Site](https://img.shields.io/badge/Site-isago2508.github.io-FF2E88?style=for-the-badge)](https://isago2508.github.io/HardwareDiag/)
+[![Downloads](https://img.shields.io/github/downloads/Isago2508/HardwareDiag/total?style=for-the-badge&label=downloads&color=2EA043)](https://github.com/Isago2508/HardwareDiag/releases)
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-9-512BD4?logo=dotnet&logoColor=white)
