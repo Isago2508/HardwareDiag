@@ -6,7 +6,7 @@
 
 **Diagnóstico completo de hardware para Windows: sensores ao vivo, saúde dos discos (SMART), drivers, benchmark 3D e recomendações de upgrade, tudo em um programa só e grátis.**
 
-[![Baixar para Windows](https://img.shields.io/badge/Baixar_para_Windows-v1.0.1-00B8D9?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Isago2508/HardwareDiag/releases/latest)
+[![Baixar para Windows](https://img.shields.io/badge/Baixar_para_Windows-v1.0.2-00B8D9?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/Isago2508/HardwareDiag/releases/latest)
 [![Site](https://img.shields.io/badge/Site-isago2508.github.io-FF2E88?style=for-the-badge)](https://isago2508.github.io/HardwareDiag/)
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)
@@ -64,10 +64,10 @@ Também gera relatórios prontos para enviar ao cliente.
 
 ## Download e instalação
 
-1. Baixe o **`Instalar_HardwareDiag_1.0.1.exe`** em [Releases](https://github.com/Isago2508/HardwareDiag/releases/latest).
+1. Baixe o **`Instalar_HardwareDiag_1.0.2.exe`** em [Releases](https://github.com/Isago2508/HardwareDiag/releases/latest).
 2. Abra o arquivo. Se aparecer "O Windows protegeu o computador", clique em **Mais informações → Executar assim mesmo**.
    O aviso aparece porque o programa é novo e ainda não tem assinatura digital.
-3. Siga o assistente de instalação. Não é preciso instalar o .NET.
+3. Siga o assistente de instalação. Não é preciso instalar o .NET nem o driver PawnIO: ele já vem junto e é instalado sozinho.
 
 **Requisitos:** Windows 10 ou 11 (64 bits), executar como administrador (o programa já pede) e o Microsoft Edge WebView2,
 que já vem no Windows atualizado.

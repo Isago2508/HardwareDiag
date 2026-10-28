@@ -11,6 +11,7 @@ continue disponível; os links apontam para os repositórios oficiais.
 | FirebirdSql.Data.FirebirdClient | 10.3.4 | IDPL (Initial Developer's Public License) | https://github.com/FirebirdSQL/NETProvider |
 | System.Management, System.Security.Cryptography.ProtectedData | 10.0.13 | MIT | https://github.com/dotnet/runtime |
 | Microsoft.Web.WebView2 | 1.0.4314.35 | BSD 3-Clause (Microsoft) | https://www.nuget.org/packages/Microsoft.Web.WebView2 |
+| PawnIO (driver de sensores; instalador oficial embutido, sem modificação) | 2.2.0 | GNU GPL 2.0 | https://github.com/namazso/PawnIO |
 | three.js (placa-mãe 3D e teste de vídeo) | 0.160.0 | MIT | https://github.com/mrdoob/three.js |
 | .NET Runtime e Windows Forms (incluídos no executável) | 9.0 | MIT | https://github.com/dotnet/runtime |
 
